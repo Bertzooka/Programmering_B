@@ -1,4 +1,4 @@
-var currentPage = '#page6'
+var currentPage = '#page1'
 var videoButton, theVideo
 var videoPlaying = true
 var screenshot1 = './assets/screenshot1.jpg'
