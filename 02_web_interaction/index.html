@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template with P5.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"></script>
+</head>
+
+<body>
+    <div class="menu-wrapper">
+        <div class="burger-icon">≡</div>
+        <div class="sidebar">
+
+        </div>
+    </div>
+    <main>
+        <div class="page" id="page1" title="button">
+            <button id="theButton">click me</button>
+            <a href="https://p5js.org/reference/p5/createButton/">Læs mere om P5.JS createButton her</a>
+        </div>
+
+        <div class="page" id="page2" title="Drop down">
+            <span>
+                <select name="theDropdown" id="theDropdown">
+                    <option value="white" selected>Vælg venligst en baggrundsfarve</option>
+                    <option value="orangered">Orangerød</option>
+                    <option value="hotpink">Hot pink</option>
+                </select>
+                <hr>
+                <a href="https://p5js.org/reference/p5/createSelect/">Læs mere om P5.JS createSelect her</a>
+            </span>
+        </div>
+
+        <div class="page" id="page3" title="Input field">
+            <span>
+                <input type="text" id="theInput">
+                <button id="theInputButton">Go</button>
+                <br>
+                <hr>
+                <a href="https://p5js.org/reference/p5/createInput/">Læs om P5.JS createInput her</a>
+                <h1 id="theInputTitle"></h1>
+            </span>
+        </div>
+
+        <div id="page4" class="page" title="Checkboxes">
+            <span>
+                <label id="ck1" for="ck1">Har du eller har du haft lyst til at gøre oprør mod rektor</label>
+                <input type="checkbox" name="ck1" id="ck1">
+                <hr>
+                <a href="https://p5js.org/reference/p5/createCheckbox/"></a>
+            </span>
+        </div>
+        <div id="page5" class="page" title="P5 Button">
+            
+        </div>
+
+
+
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

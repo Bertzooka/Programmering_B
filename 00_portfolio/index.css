@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+body{
+    background-color: blanchedalmond;
+    font-family: "Roboto";
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+.menu-wrapper{
+    position:fixed;
+    width:fit-content;
+    height: 100%;
+    left:0;
+    top:0;
+    z-index: 2;
+}
+
+
+.burger-icon{
+    position: fixed;
+    left:1rem;
+    top:1rem;
+    cursor: pointer;
+    font-size:2rem;
+    color:black;
+    z-index:3;
+   transition: color 0.5 ease-in-out;
+    
+}
+
+
+.menu-wrapper:has(.sidebar:hover) .burger-icon, .burger-icon:hover {
+color:white;
+}
+
+.sidebar{
+    position: relative;
+    left:-100%;
+    top:0;
+    width:100%;
+    height: 100%;
+    min-width: 15rem;
+    background-color: #82735C;
+    color:#ECE2D0;
+    padding:4rem 1rem;
+    box-sizing: border-box;
+    transition: ease-in-out 0.3s;
+}
+
+.burger-icon:hover + .sidebar, .sidebar:hover{
+    left:0;
+    box-shadow: 0 0 10px black;
+}
+
+.sidebar a {
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+    color:white;
+    margin: 1rem 0;
+    opacity: 0.5;
+    transition: opacity 0.15s ease-in-out,
+        transform 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.sidebar a:hover{
+    opacity: 1;
+    transform: translateX(0.5rem);
+    filter: drop-shadow(0 0 10px white);
+    
+}
+
+.page{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    /* grid layout */
+    display:grid;
+    place-items: center;
+    /* position fixed - klasse "show" viser pages*/
+    position: fixed;
+    left:-100vw;
+    transition:  1s ease-in-out all;
+
+}
+
+
+.show{
+    left:0;
+
+}
+
+/* All div's inside of pages are treated as full width*/
+.page div {
+    width:100%;
+    height:100%;
+    display:grid;
+    place-items:center;
+    
+}
+
+
+
+h1{
+    font-weight: 300;
+    font-size:3rem;
+}
+
+
+#page1{
+    grid-template-rows:1fr 5fr ;
+}
+
+#page1 .top{
+    background-color: #43493D;
+    color:white;
+}
+
+
+
+#page1 .bottom{
+   grid-template-columns: 1fr 1fr;
+}
+
+#page1 .bottom .left{
+    background-image: url(./assets/HOPE.jpg);
+    background-size: cover;
+}
+
+
+#page1 .bottom .right{
+background-image: url(./assets/mirage.jpg);
+background-size: cover;
+}
+
+
+#page2{
+    grid-template-rows:1fr 3fr ;
+}
+
+#page2 .top{
+    background-color: #ECE2D0;
+    
+}
+#page2 .bottom{
+    grid-template-columns: 1fr 3fr;
+     padding: 1rem;
+    
+}
+
+#page2 .bottom .left{
+     background-image: url(./assets/Screenshot\ 2025-10-19\ 230728.png);
+    background-size: cover;
+      padding: 1rem;
+}
+
+#page2 .bottom .right{
+    background-color:   #43493D;
+    grid-template-rows: 1.5fr 2fr;
+    padding: 1rem;
+    color: white;
+}
+
+#page2 .bottom .right .bottom{
+    background-color:   #ECE2D0;
+      
+}
+#page3{
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+#page3 .left{
+    background-color: #82735C;
+    grid-template-rows: 1fr 3fr;
+    
+}
+
+
+#page3 .left .bottom{
+    background-color: #ECE2D0;
+    color: black;
+    
+}
+
+#page3 .right{
+    background-color: aqua;
+    grid-template-rows: 3fr 3fr 3fr;
+}
+
+#page3 .right .top{
+    background-image: url(./assets/Gx29HJ-XAAA52rf.jpg);
+}
+
+#page3 .right .middel{
+    background-image: url(./assets/blender.png);
+}
+
+#page3 .right .bottom{
+    background-image: url(./assets/R.jpg);
+}
+#page4{
+    grid-template-rows: 1fr 3fr;
+    background-color: #ECE2D0;
+
+}
+#page4 .bottom{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#grid1{
+    background-color: #ECE2D0;
+}
+
+#grid2{
+    background-color: #82735C;
+}
+
+#grid3{
+    background-color: #43493D;
+}
+
+#grid4{
+    background-color: #82735C;
+}
+
+
+#page5 {
+grid-template-columns: 1fr 1fr;
+}
+
+#page5 .right {
+grid-template-rows: 1fr 1fr;
+}
+
+#page5 .right .top {
+    background-color: #041F1E;
+}
+
+#page5 .right .bottom {
+    background-color: #82735C;
+    color: white;
+}
+
+#page5 .left {
+    background-color: #43493D;
+}
+
+
+.opgave{
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    position: fixed;
+    left:-100vw;
+    top:0;
+    display:grid;
+    place-items: center;
+    
+}
+
+.show{
+    left:0;
+
+}
+
+
+.opgave div{
+    width:100%;
+    height: 100%;
+    display:grid;
+    place-items: center;
+}
+
+
+#opgave1{
+    background-color: #43493D;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+#opgave1 .right .top{
+    background-color: #43493D;
+}
+
+
+#opgave1 .right .bottom{
+    background-color: #43493D;
+}
+
+
+
+#opgave2{
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#opgave2 .left{
+    background-color: #43493D;
+}
+
+
+#opgave2 .right{
+    grid-template-rows: 5fr 5fr 5fr 5fr 5fr;
+    
+}
+
+#opgave2 .right .top{
+    background-color: #43493D;
+
+}
+
+#opgave2 .right .nearlyTop{
+    background-color: #43493D;
+}
+
+#opgave2 .right .middel{
+    background-color: #43493D;
+}
+
+#opgave2 .right .nearlyBottom{
+    background-color: #43493D;
+}
+
+
+#opgave2 .right .bottom{
+    background-color: #43493D;
+}
+
+
+
+#opgave3{
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+#opgave3 .top{
+    grid-template-rows: 1fr 1fr;
+
+}
+
+#opgave3 .top .top1{
+    background-color: #43493D;
+}
+
+#opgave3 .top .top2{
+    background-color: #43493D;
+}
+
+#opgave3 .bottom{
+    grid-template-columns: 1fr 1fr ;
+}
+
+#opgave3 .bottom .left {
+    background-color: #43493D;
+}
+
+
+
+
+#opgave3 .bottom .right{
+    grid-template-rows: 1fr 1fr 1fr ;
+}
+
+
+#opgave3 .bottom .right .top{
+    background-color: #43493D;
+}
+
+
+#opgave3 .bottom .right .middel{
+    background-color:#43493D;
+}
+
+
+#opgave3 .bottom .right .bottom{
+    background-color: #43493D;
+}
+
+
+
+#opgave4{
+    grid-template-rows: 1fr 1fr;
+}
+
+#opgave4 .top{
+    grid-template-columns: 1fr 1fr;
+}
+#opgave4 .top .top1{
+    background-color: #43493D;
+}
+
+#opgave4 .top .top2{
+    background-color: #43493D;
+}
+
+
+#opgave4 .bottom{
+    grid-template-columns: 1fr 1fr;
+}
+
+#opgave4 .bottom .bottom1{
+    background-color: #43493D;
+}
+
+
+#opgave4 .bottom .bottom2{
+    background-color: #43493D;
+}
+
+
+
+#opgave5{
+    grid-template-rows: 1fr 1fr;
+}
+
+#opgave5 .top{
+    background-color: #43493D;
+}
+
+#opgave5 .bottom{
+    grid-template-columns: 1fr 1fr;
+}
+
+#opgave5 .bottom .bottom1{
+    background-color: #43493D;
+}
+
+
+#opgave5 .bottom .bottom2{
+    background-color: #43493D;
+}

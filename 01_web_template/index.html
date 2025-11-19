@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web template with p5.js</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"></script>
+</head>
+
+<body>
+    <div class="menu-wrapper">
+        <div class="burger-icon">≡</div>
+        <div class="sidebar">
+        </div>
+    </div>
+    <main>
+        <div title="Grid Center" class="page" id="page1">
+            <h1>Grid center</h1>
+        </div>
+        <div title="Horizontal Grid" class="page" id="page2">
+            <div class="top">
+                <h1> page 2 grid layout</h1>
+
+            </div>
+            <div class="bottom">
+            </div>
+        </div>
+
+        <div title="Two Column Grid" class="page" id="page3">
+
+            <div class="left">
+                <div class="top">
+                    <h1>top</h1>
+                </div>
+                <div class="bottom">
+                    <h1>bottom</h1>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="box">
+                    <div class="top">
+                        <h1>hi you</h1>
+                    </div>
+                    <div class="bottom">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div title="4 Col Grid" class="page" id="page4">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+
+        <div title="Grid with video" class="page" id="page5">
+            <div class="left">
+                <h1>Left</h1>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <h1>Top right</h1>
+                </div>
+                <div class="bottom">
+                    <h1 id="overlay">Bottom right</h1>
+                    <video id="theVideo" src=./assets/305657_tiny.mp4 autoplay muted loop></video>
+                    <button id="videoButton">Pause</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
