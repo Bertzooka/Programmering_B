@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template with P5.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"></script>
+</head>
+
+<body>
+    <div class="menu-wrapper">
+        <div class="burger-icon">≡</div>
+        <div class="sidebar">
+
+        </div>
+    </div>
+    <main>
+        <div class="page" id="page1" title="Forside">
+            <div class="top">
+            </div>
+        </div>
+        <div title="Karakterer" class="page" id="page2">
+            <div class="Geralt">
+                <div class="tekst1">Geralt of Rivia er en legendarisk witcher, kendt som White Wolf. Han blev trænet og
+                    muteret i Kaer Morhen og rejser som en stoisk, men dygtig monsterjæger med et kompliceret forhold
+                    til Yennefer og et stærkt bånd til Ciri. Bag sin barske facade er han loyal, principfast og langt
+                    mere omsorgsfuld, end han lader sig mærke med</div>
+                <div class="billede1"></div>
+            </div>
+            <div class="Ciri">
+                <div class="tekst2">Ciri, eller Cirilla Fiona Elen Riannon, er den sidste bærer af Elder Blood og kendt
+                    som Child of Destiny. Hun blev trænet som witcher under Geralt i Kaer Morhen og besidder magiske
+                    evner, der kan ændre verden. Som prinsesse af Cintra og arving til flere riger har hun både et tungt
+                    ansvar og en farlig skæbne, men bag hendes modige og stærke facade gemmer sig også et sårbart og
+                    menneskeligt barn, formet af tab, kærlighed og skæbnens bånd.</div>
+                <div class="billede2"></div>
+            </div>
+            <div class="Yennefer">
+                <div class="tekst3">Yennefer af Vengerberg er en mægtig og ambitiøs sorceress, kendt for sin skarpe
+                    intelligens og stærke vilje. Hun blev trænet i Aretuza og har en kompliceret, lidenskabelig relation
+                    til Geralt, samtidig med at hun fungerer som mentor og moderfigur for Ciri. Bag hendes kølige og
+                    selvsikre facade gemmer sig dyb sårbarhed og et ønske om kærlighed og familie, hvilket gør hende
+                    både frygtindgydende og dybt menneskelig.</div>
+                <div class="billede3"></div>
+            </div>
+            <div class="Vesemir">
+                <div class="tekst4">Vesemir er den ældste og mest erfarne witcher på Kaer Morhen, kendt som en mentor og
+                    faderfigur for yngre witchere som Geralt og Ciri. Med årtiers kamp mod monstre og hårde træninger
+                    udstråler han ro, visdom og tålmodighed. Bag hans strenge og pragmatiske ydre gemmer sig dyb
+                    loyalitet, omsorg og et stort hjerte for dem, han ser som familie.</div>
+                <div class="billede4"></div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="page" id="page3" title="Billeder">
+            <div class="background1 parallax">
+                <h1>Geralt</h1>
+            </div>
+            <div class="background2 parallax">
+                <h1>Ciri</h1>
+            </div>
+            <div class="background3 parallax">
+                <h1>Yennefer</h1>
+            </div>
+            <div class="background4 parallax">
+                <h1>Vesemir</h1>
+            </div>
+        </div>
+        <div class="page" id="page4" title="Trailer">
+            <video id="theVideo" src=./assets/trailer.mp4 autoplay muted loop class="trailer"></video>
+                <button id="videoButton">Pause</button>     
+            <div class="bottom">
+                
+            </div>
+        </div>
+        <div class="page" id="page5" title="Historie">Geralt leder efter Ciri, som er på flugt fra den mægtige og brutale Wild Hunt, der vil bruge hendes Elder Blood-kræfter. Jagten fører ham gennem krigshærgede områder som Velen, Novigrad og Skellige, hvor han møder gamle venner, fjender og kærlighed, især Yennefer og Triss.
+
+Undervejs samler Geralt spor om Ciris rejse, hjælper folk i nød og bekæmper monstre, mens Wild Hunt kommer tættere på. Til sidst finder han Ciri, og sammen står de imod Eredin og hans hær for at forhindre en katastrofe.
+
+Historien handler om skæbne, familie og valgene, der former både Geralt og Ciri, og hvordan de kæmper for hinanden i en verden fuld af kaos.</div>
+
+<div class="page" id="page6" title="Screenshots">
+     <span>
+                <select name="theDropdown" id="theDropdown">
+                    <option value="white" selected>Vælg venligst et screenshot</option>
+                    <option value="assets/screenshot1.jpg">Kaer Morhen</option>
+                    <option value="assets/screenshot2.jpg">Wine and Blood</option>
+                     <option value="assets/screenshot3.jpg">Bjerg</option>
+                </select>
+            </span>
+</div>
+
+    </main>
+    
+    <script src="./index.js"></script>
+</body>
+
+</html>
