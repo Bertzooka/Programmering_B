@@ -108,5 +108,8 @@ h1 {
 }
 
 #page2 img{
-    width: 50vw;
+    width:20vw;
+    height: 20vw;
+    border-radius:50%;
 }
+
