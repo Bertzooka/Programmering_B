@@ -55,6 +55,11 @@ function setup(){
   //CheckAnswer med argumentet true
   select('#trueBtn').mousePressed(()=>checkAnswer(true))
   select('#falseBtn').mousePressed(()=>checkAnswer(false))
+  select('#restartBtn').mousePressed(()=>{
+    q = 0
+    score = 0
+    shiftPage('#page1')
+  })
 }
 
 function showQ(){
@@ -73,7 +78,7 @@ function checkAnswer(bool){
     shiftPage('#page3')
     return
   }
-  showQ
+  showQ()
 }
 
 function shiftPage(id){
